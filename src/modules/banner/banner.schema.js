@@ -6,10 +6,8 @@ type Query{
 
 },
     type Image{
-        Id: Int,
-        ArchiveId: Int,
-        Title: String,
-        Label: String
-        Url: String,
+        title: String,
+        label: String
+        url: String,
     }
 `)

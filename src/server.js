@@ -1,4 +1,4 @@
-require("dotenv").config();
+import 'dotenv/config'
 import { graphqlHTTP } from "express-graphql";
 import express from "express";
 import cors from "cors";
@@ -8,11 +8,11 @@ const app = express();
 
 app.use(cors())
 
-application.use('/graphql', graphqlHTTP({
-  schema: mySchema,
+app.use('/graphql', graphqlHTTP({
+  schema: "mySchema",
   graphiql: true
 }))
 
-application.listen(PORT, () => {
+app.listen(PORT, () => {
   console.log(`Servidor rodnando na porta ${PORT}`)
 })

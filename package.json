@@ -2,8 +2,9 @@
   "name": "banners_rihappy",
   "version": "1.0.0",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "dev": "nodemon --exec src/server.js"
+    "dev": "node --watch src/server.js"
   },
   "repository": "https://github.com/CaioNunesS/banners-rihappy.git",
   "author": "caioNunesS <caiogrb@gmail.com>",

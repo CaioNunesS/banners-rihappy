@@ -3,6 +3,6 @@ import { carousel } from './slider-layout.jsonc'
 
 const carouselRoutes = Routes()
 
-carouselRoutes.get('/', carousel)
+carouselRoutes.post('/', carousel)
 
 export {carouselRoutes}

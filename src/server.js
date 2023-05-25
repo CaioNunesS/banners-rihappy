@@ -1,15 +1,16 @@
-import { graphql, buildSchema } from "graphql"
+import graphqlHTTP from "express-graphql"
+import express from 'express'
+import cors from 'cors';
 
-var schema = buildSchema(`
-  type Query {
-    hello: String
-  }
-`)
+const app = express();
 
-var rootValue = { hello: () => "Hello world!" }
+app.use(cors())
 
-var source = "{ hello }"
+application.use('/graphql', graphqlHTTP({
+  schema: mySchema,
+  graphiql: true
+}))
 
-graphql({ schema, source, rootValue }).then(response => {
-  console.log(response)
+application.listen(PORT, () => {
+  console.log(`Servidor rodnando na porta ${PORT}`)
 })

@@ -2,6 +2,7 @@ import 'dotenv/config'
 import { graphqlHTTP } from "express-graphql";
 import express from "express";
 import cors from "cors";
+import {BuildSchema} from "./modules/banner/banner.schema.js"
 
 const PORT = Number(process.env.PORT) || 3000;
 const app = express();
@@ -9,7 +10,7 @@ const app = express();
 app.use(cors())
 
 app.use('/graphql', graphqlHTTP({
-  schema: "mySchema",
+  schema: BuildSchema,
   graphiql: true
 }))
 

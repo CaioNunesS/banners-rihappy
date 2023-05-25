@@ -1,0 +1,15 @@
+{
+  "name": "banners_rihappy",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CaioNunesS/banners-rihappy.git",
+  "author": "caioNunesS <caiogrb@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "graphql": "^16.6.0",
+    "vtex": "^3.0.0"
+  }
+}
